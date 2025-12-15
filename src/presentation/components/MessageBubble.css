@@ -1,0 +1,72 @@
+.message-bubble {
+  @apply mb-4 transition-all duration-200;
+}
+
+.message-bubble--system {
+  @apply flex justify-center my-4;
+}
+
+.message-bubble__system-content {
+  @apply bg-gray-100 text-gray-600 text-xs px-4 py-2 rounded-full;
+}
+
+.message-bubble__system-time {
+  @apply text-xs text-gray-400 ml-2 self-center;
+}
+
+.message-bubble--student {
+  @apply flex justify-start;
+}
+
+.message-bubble--admin {
+  @apply flex justify-end;
+}
+
+.message-bubble__content {
+  @apply max-w-md;
+}
+
+.message-bubble__text {
+  @apply px-4 py-3 rounded-2xl;
+}
+
+.message-bubble__text--student {
+  @apply bg-white text-gray-900 border border-gray-200;
+}
+
+.message-bubble__text--admin {
+  @apply bg-blue-500 text-white;
+}
+
+.message-bubble__footer {
+  @apply flex items-center gap-1 mt-1 px-2;
+}
+
+.message-bubble__footer--student {
+  @apply justify-start;
+}
+
+.message-bubble__footer--admin {
+  @apply justify-end;
+}
+
+.message-bubble__time {
+  @apply text-xs text-gray-500;
+}
+
+.message-bubble__status-icon {
+  @apply w-3 h-3;
+}
+
+.message-bubble__status-icon--read {
+  @apply text-blue-500;
+}
+
+.message-bubble__status-icon--delivered {
+  @apply text-gray-400;
+}
+
+/* Hover effect */
+.message-bubble:hover .message-bubble__text {
+  @apply shadow-sm;
+}

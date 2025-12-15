@@ -1,0 +1,67 @@
+.chat-list-item {
+  @apply p-3 border-b border-gray-100 cursor-pointer transition-all duration-200;
+}
+
+.chat-list-item:hover {
+  @apply bg-gray-50;
+}
+
+.chat-list-item--selected {
+  @apply bg-blue-50 border-l-4 border-l-blue-500;
+}
+
+.chat-list-item__container {
+  @apply flex items-start gap-3;
+}
+
+.chat-list-item__avatar {
+  @apply w-10 h-10 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-white text-sm font-semibold flex-shrink-0;
+}
+
+.chat-list-item__content {
+  @apply flex-1 min-w-0;
+}
+
+.chat-list-item__header {
+  @apply flex items-center justify-between mb-1;
+}
+
+.chat-list-item__name {
+  @apply font-semibold text-sm text-gray-900 truncate;
+}
+
+.chat-list-item__time {
+  @apply text-xs text-gray-500;
+}
+
+.chat-list-item__message {
+  @apply text-xs text-gray-600 truncate mb-1;
+}
+
+.chat-list-item__footer {
+  @apply flex items-center justify-between;
+}
+
+.chat-list-item__status {
+  @apply text-xs px-2 py-0.5 rounded-full;
+}
+
+.chat-list-item__status--open {
+  @apply bg-blue-100 text-blue-700;
+}
+
+.chat-list-item__status--agent {
+  @apply bg-green-100 text-green-700;
+}
+
+.chat-list-item__status--paused {
+  @apply bg-gray-100 text-gray-700;
+}
+
+.chat-list-item__status--awaiting {
+  @apply bg-yellow-100 text-yellow-700;
+}
+
+.chat-list-item__unread {
+  @apply bg-orange-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center;
+}

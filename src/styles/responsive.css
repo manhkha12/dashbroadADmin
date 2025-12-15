@@ -1,0 +1,43 @@
+@media (max-width: 640px) {
+  .admin-chat-page__sidebar-left {
+    @apply hidden;
+  }
+
+  .admin-chat-page__sidebar-middle {
+    @apply w-full;
+  }
+
+  .admin-chat-page__sidebar-right {
+    @apply hidden;
+  }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .admin-chat-page__sidebar-left {
+    @apply w-64;
+  }
+
+  .admin-chat-page__sidebar-middle {
+    @apply w-72;
+  }
+
+  .admin-chat-page__sidebar-right {
+    @apply w-72;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .admin-chat-page__sidebar-left {
+    @apply w-72;
+  }
+
+  .admin-chat-page__sidebar-middle {
+    @apply w-80;
+  }
+
+  .admin-chat-page__sidebar-right {
+    @apply w-80;
+  }
+}

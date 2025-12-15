@@ -1,0 +1,43 @@
+.activity-list {
+  @apply bg-white rounded-lg p-4 shadow-sm;
+}
+
+.activity-list__title {
+  @apply font-semibold text-gray-900 mb-3;
+}
+
+.activity-list__textarea {
+  @apply w-full p-2 border border-gray-300 rounded-lg text-sm mb-4 resize-none transition-all duration-200;
+}
+
+.activity-list__textarea:focus {
+  @apply outline-none ring-2 ring-blue-500 border-transparent;
+}
+
+.activity-list__items {
+  @apply space-y-3;
+}
+
+.activity-list__item {
+  @apply flex items-start gap-2;
+}
+
+.activity-list__avatar {
+  @apply w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs font-semibold flex-shrink-0;
+}
+
+.activity-list__content {
+  @apply flex-1 min-w-0;
+}
+
+.activity-list__user {
+  @apply text-xs font-medium text-gray-900;
+}
+
+.activity-list__action {
+  @apply text-xs text-gray-600 mt-0.5;
+}
+
+.activity-list__time {
+  @apply text-xs text-gray-400 mt-1;
+}

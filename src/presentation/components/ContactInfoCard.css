@@ -1,0 +1,56 @@
+
+.contact-info-card {
+  @apply bg-white rounded-lg p-4 mb-4 shadow-sm;
+}
+
+.contact-info-card__header {
+  @apply text-center mb-4;
+}
+
+.contact-info-card__avatar {
+  @apply w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-white text-xl font-semibold mx-auto mb-2;
+}
+
+.contact-info-card__name {
+  @apply font-bold text-gray-900;
+}
+
+.contact-info-card__subtitle {
+  @apply text-sm text-gray-500;
+}
+
+.contact-info-card__content {
+  @apply space-y-3 text-sm;
+}
+
+.contact-info-card__row {
+  @apply flex items-start gap-2;
+}
+
+.contact-info-card__icon {
+  @apply w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0;
+}
+
+.contact-info-card__field {
+  @apply flex-1;
+}
+
+.contact-info-card__label {
+  @apply text-gray-500;
+}
+
+.contact-info-card__value {
+  @apply text-gray-900;
+}
+
+.contact-info-card__value--small {
+  @apply text-xs;
+}
+
+.contact-info-card__button {
+  @apply w-full mt-4 text-blue-500 text-sm transition-colors duration-200;
+}
+
+.contact-info-card__button:hover {
+  @apply underline;
+}

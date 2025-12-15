@@ -1,0 +1,52 @@
+.admin-chat-page {
+  @apply flex h-screen bg-gray-50;
+}
+
+.admin-chat-page__sidebar-left {
+  @apply w-72 bg-white border-r border-gray-200 flex flex-col;
+}
+
+.admin-chat-page__sidebar-middle {
+  @apply w-80 bg-white border-r border-gray-200 flex flex-col;
+}
+
+.admin-chat-page__main-content {
+  @apply flex-1 flex flex-col;
+}
+
+.admin-chat-page__sidebar-right {
+  @apply w-80 bg-gray-50 overflow-y-auto p-4;
+}
+
+/* Custom scrollbar for all scrollable areas */
+.admin-chat-page__sidebar-left,
+.admin-chat-page__sidebar-middle,
+.admin-chat-page__sidebar-right {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6;
+}
+
+.admin-chat-page__sidebar-left::-webkit-scrollbar,
+.admin-chat-page__sidebar-middle::-webkit-scrollbar,
+.admin-chat-page__sidebar-right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.admin-chat-page__sidebar-left::-webkit-scrollbar-track,
+.admin-chat-page__sidebar-middle::-webkit-scrollbar-track,
+.admin-chat-page__sidebar-right::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+.admin-chat-page__sidebar-left::-webkit-scrollbar-thumb,
+.admin-chat-page__sidebar-middle::-webkit-scrollbar-thumb,
+.admin-chat-page__sidebar-right::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+.admin-chat-page__sidebar-left::-webkit-scrollbar-thumb:hover,
+.admin-chat-page__sidebar-middle::-webkit-scrollbar-thumb:hover,
+.admin-chat-page__sidebar-right::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
